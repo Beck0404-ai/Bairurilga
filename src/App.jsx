@@ -54,8 +54,8 @@ export default function App() {
         {/* Right: Audio Player */}
         <div className="pointer-events-auto">
           <AudioPlayer
-            youtubeId="S1XO_TteDOI"
-            startSeconds={10}
+            src={`${import.meta.env.BASE_URL}music.mp3`}
+            startSeconds={22}
             shouldPlay={shouldPlayAudio}
           />
         </div>

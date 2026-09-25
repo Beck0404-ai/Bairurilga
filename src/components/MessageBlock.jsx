@@ -6,10 +6,10 @@ export default function MessageBlock({
 }) {
   return (
     <div className="px-7 text-center space-y-3">
-      <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#7d6e68]">
-        Урилга
-      </div>
-      <p className="whitespace-pre-line text-balance text-[15px] leading-relaxed text-[#2c2523] font-heading text-lg sm:text-xl font-medium">
+      <h2 className="font-heading text-2xl sm:text-3xl font-bold tracking-[0.25em] uppercase text-[#b82c1f]">
+        У Р И Л Г А
+      </h2>
+      <p className="whitespace-pre-line text-balance text-base sm:text-lg leading-relaxed text-[#2c2523] font-heading font-medium">
         {message}
       </p>
       {note && (
