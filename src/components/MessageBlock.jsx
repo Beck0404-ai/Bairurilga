@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MessageBlock({
   message = "Ургах нарыг угтан сүндэрлэсэн\nУраг төрөл батжин дэлгэрсэн\nЭцэг өвгөдийнхөө голомтыг өргөтгөн тэлж буй бидний\nШинэ байрны цайллаганд хүрэлцэн ирэхийг урьж байна.",
-  signature = "Хүндэтгэсэн Азжаргалын гэр бүлээс",
+  signature = "Хүндэтгэсэн Н.Азжаргалын гэр бүлээс",
   note = ""
 }) {
   return (
@@ -14,7 +14,7 @@ export default function MessageBlock({
         {message}
       </p>
       {signature && (
-        <div className="pt-1.5 font-heading italic text-base sm:text-lg text-[#b82c1f] font-semibold">
+        <div className="pt-1.5 font-heading italic text-base sm:text-lg text-[#1f1b1a] font-semibold">
           {signature}
         </div>
       )}
