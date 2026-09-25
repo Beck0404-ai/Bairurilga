@@ -78,7 +78,7 @@ export default function App() {
         {/* Card Content Stack */}
         <div className="relative z-20 space-y-7">
           {/* Cover Hero Photo */}
-          <Hero coverUrl="/cover.jpg" />
+          <Hero coverUrl={`${import.meta.env.BASE_URL}cover.jpg`} />
 
           {/* Title */}
           <TitleBlock title="Шинэ гэрийн найр" />

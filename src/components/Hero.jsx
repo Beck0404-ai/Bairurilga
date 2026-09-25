@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Hero({ coverUrl = "/cover.jpg" }) {
+export default function Hero({ coverUrl = `${import.meta.env.BASE_URL}cover.jpg` }) {
   return (
     <div className="relative w-full aspect-[4/3] overflow-hidden rounded-b-3xl shadow-2xl">
       <img
