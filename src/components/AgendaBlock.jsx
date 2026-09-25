@@ -23,10 +23,10 @@ export default function AgendaBlock() {
     <div className="px-6 space-y-4">
       {/* Eyebrow */}
       <div className="text-center">
-        <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#8b9dbb]">
+        <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#7d6e68]">
           Цагийн хуваарь
         </div>
-        <div className="mt-1 text-xs text-[#8b9dbb]">
+        <div className="mt-1 text-xs text-[#7d6e68]">
           Зочдоо хүлээн авах нарийвчилсан хуваарь
         </div>
       </div>
@@ -36,19 +36,19 @@ export default function AgendaBlock() {
         {SCHEDULE.map((item, idx) => (
           <div
             key={idx}
-            className="flex items-center gap-3.5 p-3 rounded-2xl bg-white/[0.04] border border-white/5 hover:border-white/10 transition shadow-sm"
+            className="flex items-center gap-3.5 p-3 rounded-2xl bg-black/[0.02] border border-black/5 hover:border-black/10 transition shadow-sm"
           >
             {/* Time Pill */}
-            <div className="shrink-0 flex items-center justify-center px-2.5 py-1.5 rounded-xl bg-[#c0392b]/15 border border-[#f07b70]/30 text-[#f07b70] text-xs font-semibold tabular-nums">
+            <div className="shrink-0 flex items-center justify-center px-2.5 py-1.5 rounded-xl bg-[#b82c1f]/10 border border-[#b82c1f]/20 text-[#b82c1f] text-xs font-semibold tabular-nums">
               {item.time}
             </div>
 
             {/* Info */}
             <div className="min-w-0 flex-1">
-              <div className="text-sm font-semibold text-white/95">
+              <div className="text-sm font-semibold text-[#1f1b1a]">
                 {item.title}
               </div>
-              <div className="text-[11px] text-[#8b9dbb] truncate">
+              <div className="text-[11px] text-[#7d6e68] truncate">
                 {item.desc}
               </div>
             </div>

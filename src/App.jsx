@@ -28,7 +28,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#170503] text-[#f6eee9] flex flex-col items-center justify-start overflow-x-hidden">
+    <div className="relative min-h-screen bg-[#f7f4ee] text-[#261f1d] flex flex-col items-center justify-start overflow-x-hidden">
 
       {/* Focus Gate (Overlay before opening) */}
       {!gateOpen && (
@@ -44,7 +44,7 @@ export default function App() {
           type="button"
           onClick={handleResetGate}
           title="Хаалгыг дахин хаах"
-          className="pointer-events-auto flex items-center justify-center w-9 h-9 rounded-full bg-black/60 backdrop-blur-md text-white/80 hover:text-white border border-white/10 transition shadow-lg"
+          className="pointer-events-auto flex items-center justify-center w-9 h-9 rounded-full bg-white/80 backdrop-blur-md text-stone-700 hover:text-stone-900 border border-black/10 transition shadow-md"
         >
           <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.2">
             <path d="M19 12H5M12 19l-7-7 7-7" />
@@ -62,9 +62,9 @@ export default function App() {
       </header>
 
       {/* Main Card Scroll Container */}
-      <main className="relative w-full max-w-md min-h-screen bg-[#240805] shadow-2xl flex flex-col justify-between overflow-hidden border-x border-white/5 pb-8">
+      <main className="relative w-full max-w-md min-h-screen bg-white shadow-2xl flex flex-col justify-between overflow-hidden border-x border-black/5 pb-8">
         {/* Background Tümen Nast Pattern */}
-        <div className="tumen-pattern opacity-15" />
+        <div className="tumen-pattern opacity-10" />
 
         {/* Background Radial Glow */}
         <div
@@ -81,7 +81,7 @@ export default function App() {
           <Hero coverUrl={`${import.meta.env.BASE_URL}cover.jpg`} />
 
           {/* Title */}
-          <TitleBlock title="Шинэ гэрийн найр" />
+          <TitleBlock title="Шинэ байрны найр" />
 
           {/* Divider */}
           <Divider />
@@ -105,7 +105,7 @@ export default function App() {
 
           {/* Message */}
           <MessageBlock
-            message="Шинэхэн босгосон өргөө гэрийнхээ баяр баясгаланг хуваалцаж, шинэ гэрийг минь мялаах халуун дотно зоогт хүрэлцэн ирэхийг хүндэтгэн урьж байна."
+            message="Шинэхэн орсон өргөө байрныхаа баяр баясгаланг хуваалцаж, шинэ байрыг минь мялаах халуун дотно зоогт хүрэлцэн ирэхийг хүндэтгэн урьж байна."
           />
 
           {/* Contact */}

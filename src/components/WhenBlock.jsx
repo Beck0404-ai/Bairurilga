@@ -51,31 +51,31 @@ export default function WhenBlock({ targetDateStr = null, time = "18:00" }) {
   return (
     <div className="px-6 text-center space-y-4">
       {/* Eyebrow */}
-      <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#8b9dbb]">
+      <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#7d6e68]">
         Хэзээ
       </div>
 
       {/* Date Main Row */}
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4 max-w-xs mx-auto">
-        <div className="text-right text-sm text-[#8b9dbb] font-medium">
+        <div className="text-right text-sm text-[#7d6e68] font-medium">
           {dayOfWeekName}
         </div>
-        <div className="text-5xl font-semibold leading-none font-heading text-[#f07b70]">
+        <div className="text-5xl font-semibold leading-none font-heading text-[#b82c1f]">
           {day}
         </div>
-        <div className="text-left text-sm text-[#8b9dbb] font-medium">
+        <div className="text-left text-sm text-[#7d6e68] font-medium">
           {time}
         </div>
       </div>
 
       {/* Mini Calendar Widget */}
-      <div className="mx-auto w-full max-w-[280px] rounded-2xl p-3 bg-white/[0.04] border border-white/10 shadow-inner">
-        <div className="text-[11px] font-semibold uppercase tracking-wider text-[#8b9dbb] mb-2">
+      <div className="mx-auto w-full max-w-[280px] rounded-2xl p-3 bg-black/[0.02] border border-black/10 shadow-sm">
+        <div className="text-[11px] font-semibold uppercase tracking-wider text-[#7d6e68] mb-2">
           {MN_MONTHS[month]} {year}
         </div>
         <div className="grid grid-cols-7 gap-y-1 text-[11px]">
           {['Да', 'Мя', 'Лх', 'Пү', 'Ба', 'Бя', 'Ня'].map((d) => (
-            <div key={d} className="py-0.5 text-[#8b9dbb]/70 font-medium">
+            <div key={d} className="py-0.5 text-[#7d6e68]/80 font-medium">
               {d}
             </div>
           ))}
@@ -89,8 +89,8 @@ export default function WhenBlock({ targetDateStr = null, time = "18:00" }) {
                 <span
                   className={`flex h-6 w-6 items-center justify-center rounded-full text-[11px] transition ${
                     isTarget
-                      ? 'bg-[#c0392b] text-white font-bold shadow-md'
-                      : 'text-white/80 hover:bg-white/5'
+                      ? 'bg-[#b82c1f] text-white font-bold shadow-md'
+                      : 'text-[#2c2523] hover:bg-black/5'
                   }`}
                 >
                   {d}
@@ -102,7 +102,7 @@ export default function WhenBlock({ targetDateStr = null, time = "18:00" }) {
       </div>
 
       {/* Live Countdown Timer */}
-      <div className="mx-auto inline-flex gap-2 rounded-2xl px-4 py-2.5 bg-white/[0.04] border border-white/10 shadow-sm">
+      <div className="mx-auto inline-flex gap-2 rounded-2xl px-4 py-2.5 bg-black/[0.02] border border-black/10 shadow-sm">
         {[
           { label: 'Өдөр', val: countdown.d },
           { label: 'Цаг', val: countdown.h },
@@ -110,10 +110,10 @@ export default function WhenBlock({ targetDateStr = null, time = "18:00" }) {
           { label: 'Сек', val: countdown.s }
         ].map(({ label, val }) => (
           <div key={label} className="min-w-[44px]">
-            <div className="text-lg font-semibold leading-none text-[#f07b70] tabular-nums font-heading">
+            <div className="text-lg font-semibold leading-none text-[#b82c1f] tabular-nums font-heading">
               {String(val).padStart(2, '0')}
             </div>
-            <div className="text-[9px] uppercase tracking-wider text-[#8b9dbb] mt-1">
+            <div className="text-[9px] uppercase tracking-wider text-[#7d6e68] mt-1">
               {label}
             </div>
           </div>

@@ -16,32 +16,32 @@ export default function FocusGate({ onOpen }) {
         opening ? 'opacity-0 pointer-events-none scale-105' : 'opacity-100'
       }`}
       style={{
-        background: 'radial-gradient(ellipse 85% 75% at 50% 50%, #681b12 0%, #48130c 45%, #220705 100%)'
+        background: 'radial-gradient(ellipse 90% 80% at 50% 50%, #ffffff 0%, #faf4ee 55%, #ede0d4 100%)'
       }}
     >
       {/* Background Pattern Mask */}
       <div
         className="tumen-pattern"
         style={{
-          backgroundColor: '#e58774',
-          opacity: 0.22
+          backgroundColor: '#b82c1f',
+          opacity: 0.08
         }}
       />
 
       {/* Radial Vignette */}
       <div className="ux-fc-vignette pointer-events-none" />
 
-      {/* Center Layout exactly as in screenshot */}
+      {/* Center Layout */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center gap-5 px-6 animate-fade-in">
         {/* Kicker */}
-        <div className="text-xs font-semibold tracking-[0.25em] uppercase text-white/95 drop-shadow-md">
+        <div className="text-xs font-semibold tracking-[0.25em] uppercase text-[#5c4942] drop-shadow-sm">
           ТАНД УРИЛГА ИРЛЭЭ
         </div>
 
         {/* Circular Hand Icon with Ripple Ring */}
         <div className="relative flex items-center justify-center my-1">
           <span className="ux-tap-ring" />
-          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/40 bg-white/10 text-white shadow-2xl backdrop-blur-md transition transform hover:scale-105">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#b82c1f]/25 bg-white/95 text-[#b82c1f] shadow-2xl backdrop-blur-md transition transform hover:scale-105">
             <svg
               viewBox="0 0 24 24"
               className="w-6 h-6"
@@ -60,8 +60,8 @@ export default function FocusGate({ onOpen }) {
         </div>
 
         {/* Pill Hint Button */}
-        <div className="rounded-full border border-white/30 bg-white/10 px-8 py-2.5 backdrop-blur-md shadow-xl transition hover:bg-white/15 active:scale-95">
-          <span className="text-sm font-semibold tracking-wide text-white drop-shadow">
+        <div className="rounded-full border border-[#b82c1f]/25 bg-white/95 px-8 py-2.5 backdrop-blur-md shadow-xl transition hover:bg-white active:scale-95">
+          <span className="text-sm font-semibold tracking-wide text-[#b82c1f]">
             Энд дарж нээнэ үү
           </span>
         </div>

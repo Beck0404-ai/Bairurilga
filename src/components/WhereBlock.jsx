@@ -73,22 +73,22 @@ export default function WhereBlock({
   return (
     <div className="px-6 text-center space-y-3">
       {/* Eyebrow */}
-      <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#8b9dbb]">
+      <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#7d6e68]">
         Хаана
       </div>
 
       {/* Name and Address */}
       <div className="space-y-1">
-        <h3 className="text-base font-semibold text-white">
+        <h3 className="text-base font-semibold text-[#1f1b1a]">
           {name}
         </h3>
-        <p className="text-xs text-[#8b9dbb] whitespace-pre-line leading-relaxed">
+        <p className="text-xs text-[#5c504b] whitespace-pre-line leading-relaxed">
           {address}
         </p>
       </div>
 
       {/* OpenStreetMap Preview */}
-      <div className="mx-auto aspect-[2/1] w-full max-w-sm overflow-hidden rounded-2xl border border-white/10 shadow-lg">
+      <div className="mx-auto aspect-[2/1] w-full max-w-sm overflow-hidden rounded-2xl border border-black/10 shadow-md">
         <StaticMap lat={lat} lng={lng} />
       </div>
 

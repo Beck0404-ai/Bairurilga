@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --card-bg: #240805;
-  --card-text: #f6eee9;
-  --card-muted: #c9a49c;
+  --card-bg: #ffffff;
+  --card-text: #261f1d;
+  --card-muted: #7d6e68;
   --card-accent: #c0392b;
-  --card-accent-text: #f58e83;
-  --card-accent-fill: #992316;
+  --card-accent-text: #b82c1f;
+  --card-accent-fill: #b82c1f;
   --card-accent-ink: #ffffff;
-  --card-border: rgba(255, 255, 255, 0.1);
-  --card-surface: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(0, 0, 0, 0.08);
+  --card-surface: rgba(0, 0, 0, 0.03);
   --card-font-heading: 'Cormorant Garamond', 'Lora', serif;
   --card-font-body: 'Inter', 'Golos Text', sans-serif;
-  --card-glow: radial-gradient(ellipse 85% 50% at 50% 12%, rgba(175, 42, 28, 0.45) 0%, rgba(36, 8, 5, 0) 75%);
+  --card-glow: radial-gradient(ellipse 85% 50% at 50% 12%, rgba(248, 224, 215, 0.7) 0%, rgba(255, 255, 255, 0) 75%);
 }
 
 body {
   margin: 0;
-  background-color: #170503;
+  background-color: #f7f4ee;
   color: var(--card-text);
   font-family: var(--card-font-body);
   -webkit-font-smoothing: antialiased;
@@ -32,8 +32,8 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-color: #e58774;
-  opacity: 0.18;
+  background-color: #b82c1f;
+  opacity: 0.055;
   mask-image: url(/patterns/bg-tumen.svg);
   -webkit-mask-image: url(/patterns/bg-tumen.svg);
   mask-repeat: repeat;
@@ -59,9 +59,10 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.95);
+  color: #b82c1f;
+  border: 1px solid rgba(184, 44, 31, 0.25);
+  box-shadow: 0 10px 25px -5px rgba(184, 44, 31, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(8px);
   animation: ux-hand-float 2.4s ease-in-out infinite;
 }
@@ -70,7 +71,7 @@ body {
   position: absolute;
   inset: -8px;
   border-radius: 9999px;
-  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border: 1.5px solid rgba(184, 44, 31, 0.4);
   opacity: 0;
   animation: ux-tap-pulse 2.2s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
 }
@@ -87,7 +88,7 @@ body {
 @keyframes ux-tap-pulse {
   0% {
     transform: scale(0.88);
-    opacity: 0.75;
+    opacity: 0.85;
   }
   100% {
     transform: scale(1.45);
@@ -98,7 +99,7 @@ body {
 .ux-fc-vignette {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 60% at 50% 50%, transparent 20%, rgba(24, 5, 4, 0.4) 60%, rgba(10, 2, 1, 0.88) 100%);
+  background: radial-gradient(ellipse 75% 65% at 50% 50%, transparent 35%, rgba(180, 140, 120, 0.15) 75%, rgba(140, 95, 75, 0.3) 100%);
   animation: ux-fc-breathe 5s ease-in-out infinite;
 }
 
@@ -119,9 +120,9 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.25);
 }

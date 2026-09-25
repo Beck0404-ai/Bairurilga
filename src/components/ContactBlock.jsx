@@ -7,14 +7,14 @@ export default function ContactBlock({ phone = "96011047" }) {
   return (
     <div className="px-6 text-center space-y-2.5">
       {/* Eyebrow */}
-      <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#c9a49c]">
+      <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#7d6e68]">
         Холбоо барих
       </div>
 
       <div>
         <a
           href={`tel:${phone}`}
-          className="inline-flex h-10 items-center gap-2 rounded-full px-5 text-sm font-semibold bg-[#992316] text-white shadow-md hover:bg-[#801c11] transition active:scale-95 border border-white/10"
+          className="inline-flex h-10 items-center gap-2 rounded-full px-5 text-sm font-semibold bg-[#b82c1f] text-white shadow-md hover:bg-[#9e2418] transition active:scale-95 border border-black/5"
         >
           <svg
             viewBox="0 0 24 24"
