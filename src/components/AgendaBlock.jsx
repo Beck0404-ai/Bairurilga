@@ -13,8 +13,8 @@ const SCHEDULE = [
   },
   {
     time: '14:00 - 16:00',
-    title: 'Ангийн найзууд',
-    desc: 'Багын болон ангийн найзуудаа хүлээн авах'
+    title: 'Дотны найзууд болон ангийн найзууд',
+    desc: 'Дотны болон ангийн найзуудаа хүлээн авах'
   }
 ];
 
@@ -45,10 +45,10 @@ export default function AgendaBlock() {
 
             {/* Info */}
             <div className="min-w-0 flex-1">
-              <div className="text-sm font-semibold text-[#1f1b1a]">
+              <div className="text-sm font-semibold text-[#1f1b1a] leading-snug">
                 {item.title}
               </div>
-              <div className="text-[11px] text-[#7d6e68] truncate">
+              <div className="text-[11px] text-[#7d6e68] leading-tight mt-0.5">
                 {item.desc}
               </div>
             </div>
